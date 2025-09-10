@@ -36,12 +36,40 @@
 
 
 
-            Console.Write("\n\nEnter a number: ");
-            if (int.TryParse(Console.ReadLine(), out int num))
-                Console.WriteLine("num = " + num);
-            else
-                Console.WriteLine("Invalid input. Please try again");
+            //Console.Write("\n\nEnter a number: ");
+            //if (int.TryParse(Console.ReadLine(), out int num))
+            //    Console.WriteLine("num = " + num);
+            //else
+            //    Console.WriteLine("Invalid input. Please try again");
+
+            Console.WriteLine("\n\n\n");
+
+
+
+            int x = 3, y = 5, z = 6;
+
+            Console.WriteLine("x = " + x + " y = " + y + " z = " + z);
+            Console.WriteLine($"x = {x} y = {y} z = {z}");
+            Console.WriteLine("x = {0} y = {1} z = {2}", x, y, z);
+
+
+
+            int[] array = { 5, 3, 4, 6, 7, 8, 8, 6, 4 };
+
+            PrintArray(array);
+            PrintArray(3, 4, 5, 6, 76, 7, 8, 7, 6, 5, 4, 43);
         }
+
+        static void PrintArray(params int[] arr)
+        {
+            Console.WriteLine("\n\nNumber of items: " + arr.Length);
+
+            foreach (int i in arr)
+                Console.Write(i + " ");
+            Console.WriteLine();
+        }
+
+
 
         static void Calculate(int r, out double cir, out double ar)
         {
