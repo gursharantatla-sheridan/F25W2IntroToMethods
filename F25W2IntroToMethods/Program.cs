@@ -33,6 +33,14 @@
 
             Console.WriteLine("Circumference = " + circum.ToString("F"));
             Console.WriteLine("Area = " + area.ToString("F"));
+
+
+
+            Console.Write("\n\nEnter a number: ");
+            if (int.TryParse(Console.ReadLine(), out int num))
+                Console.WriteLine("num = " + num);
+            else
+                Console.WriteLine("Invalid input. Please try again");
         }
 
         static void Calculate(int r, out double cir, out double ar)
