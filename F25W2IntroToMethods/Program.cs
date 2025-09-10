@@ -58,7 +58,20 @@
 
             PrintArray(array);
             PrintArray(3, 4, 5, 6, 76, 7, 8, 7, 6, 5, 4, 43);
+
+
+            PersonInfo("John", 34);
+            PersonInfo(name: "John", age: 34);
+            PersonInfo(age: 34, name: "John");
+            PersonInfo("John");
         }
+
+        static void PersonInfo(string name, int age = 21)
+        {
+            // method body
+        }
+
+
 
         static void PrintArray(params int[] arr)
         {
